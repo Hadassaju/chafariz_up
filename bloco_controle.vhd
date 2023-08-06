@@ -1,6 +1,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
-use IEEE.std_logic_unsigned.all; -- Para operações com std_logic_vector
+--use IEEE.std_logic_unsigned.all; -- Para operações com std_logic_vector
+
 
 entity bloco_controle is
     port (

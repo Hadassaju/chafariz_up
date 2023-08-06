@@ -8,7 +8,7 @@ end chafariz_tb;
 
 architecture tb of chafariz_tb is
 
-	component chafariz is
+	component chafariz_up is
 		    port (
 		  clk, clr : in std_logic;
         a: in std_logic_vector(1 downto 0);
@@ -16,14 +16,14 @@ architecture tb of chafariz_tb is
         d : out std_logic;
 		  LED : out std_logic_vector(1 downto 0)
     );
-	 end component chafariz;
+	 end component chafariz_up;
 	 
 	 signal clk, clr, c, d: std_logic;
 	 signal a : std_logic_vector (1 downto 0);
 	 signal LED : std_logic_vector (1 downto 0);
 	 
 	 begin
-		chaf_digital: chafariz port map (
+		chaf_digital: chafariz_up port map (
 			clr => clr,
 			clk => clk,
 			a => a,
